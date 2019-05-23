@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DreamSeekr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cfc-mQ-ZPS">
+                                <rect key="frame" x="0.0" y="30" width="600" height="570"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyd-fC-fSY">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name the Dream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5x8-5r-8vw">
+                                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the Dream" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Kl-cD-hac">
+                                                <rect key="frame" x="129" y="0.0" width="470.5" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" priority="750" constant="30" id="cdR-1d-kWl"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="cdR-1d-kWl"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="cdR-1d-kWl"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wYi-D6-2Ki">
+                                        <rect key="frame" x="0.0" y="30" width="600" height="540"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjq-Wj-tKl">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="250" constant="97" id="CiH-gN-LCZ">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="97"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="100" id="ixi-g8-N6U"/>
+                                                    <constraint firstAttribute="height" priority="250" constant="44" id="rBC-xg-CGT">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="44"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <state key="normal" title="Add Image">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="CiH-gN-LCZ"/>
+                                                        <exclude reference="ixi-g8-N6U"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="ixi-g8-N6U"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="zlP-qA-QKP">
+                                                <rect key="frame" x="0.0" y="44" width="600" height="432"/>
+                                                <animations/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1R-kb-Vpw">
+                                                <rect key="frame" x="0.0" y="476" width="600" height="64"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.0" green="0.37254901959999998" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="AEa-GQ-qCn"/>
+                                                    <constraint firstAttribute="height" priority="750" constant="64" id="Mla-F8-zcm">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="64"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <state key="normal" title="Save">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="AEa-GQ-qCn"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="AEa-GQ-qCn"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <variation key="heightClass=regular-widthClass=regular" axis="horizontal"/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                                <variation key="heightClass=regular-widthClass=regular" distribution="fill"/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cfc-mQ-ZPS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9o3-ub-Fkq"/>
+                            <constraint firstItem="cfc-mQ-ZPS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Dvs-xP-42u"/>
+                            <constraint firstItem="cfc-mQ-ZPS" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="ceM-hV-QhL"/>
+                            <constraint firstItem="cfc-mQ-ZPS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="cj1-3k-j9E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeholder" width="300" height="250"/>
+    </resources>
+</document>
